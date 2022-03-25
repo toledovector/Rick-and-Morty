@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     
+   background-image: url("https://images6.alphacoders.com/101/1014033.jpg");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    background: rgba(73, 253, 2, 0.349);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4.5px solid rgba(255, 255, 255, 0.329);
+    border-left: 4px solid rgba(255, 255, 255, 0.329);
+    cursor: pointer;
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 120;
+}
+
+.container .card .content h2{
+    position: absolute;
+    top: -80px;
+    right: 12px;
+    font-size: 8em;
+    pointer-events: none;
+  
+    border-radius: 8px;
+        
+}
+
+.container .card .content h3{
+    font-size: 1.8em;
+    color: rgb(255, 248, 248);
+    z-index: 1;
+  
+}
+
+.container .card .content p{
+    font-size: 1em;
+    color: rgb(253, 253, 253);
+    font-weight: 300;
+}
+
+.container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: rgba(236, 252, 6, 0.726);
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
